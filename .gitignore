@@ -6,3 +6,8 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
+
+# 主题作为独立仓库克隆，不纳入主仓库版本管理
+themes/fluid/
+themes/butterfly/
+themes/next/
