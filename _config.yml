@@ -1,4 +1,4 @@
-# Hexo Configuration
+﻿# Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
@@ -98,7 +98,7 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: fluid
 
-# 本地搜索索引（供 Fluid 主题搜索框使用）
+# 鏈湴鎼滅储绱㈠紩锛堜緵 Fluid 涓婚鎼滅储妗嗕娇鐢級
 search:
   path: local-search.xml
   field: post
