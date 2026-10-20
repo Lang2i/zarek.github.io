@@ -10,7 +10,7 @@ function run(cmd, opts = {}) {
 
 const root = __dirname;
 const publicDir = path.join(root, 'public');
-const repo = 'git@github.com:Lang2i/zarek.github.io.git';
+const repo = 'https://github.com/Lang2i/zarek.github.io.git';
 const branch = 'gh-pages';
 
 if (!fs.existsSync(publicDir)) {
