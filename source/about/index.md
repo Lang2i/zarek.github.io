@@ -99,6 +99,16 @@ top_img: /img/banner.svg
     <h4>动手</h4>
     <p>焊台、示波器、一堆飞线。喜欢能摸到的东西，也相信只有亲手拆过，才算真的懂。</p>
   </div>
+  <div class="z-card">
+    <div class="z-card-icon"><i class="fas fa-yin-yang"></i></div>
+    <h4>术数</h4>
+    <p>梅花易数、小六壬、大六壬。喜欢的是那套「取象—类比—推演」的思路：从一个卦、一个时辰里，把散落的信息串成一条能自洽的线。</p>
+  </div>
+</div>
+
+<div class="z-note">
+  <div><i class="fas fa-compass" style="color:#00b8d4;"></i></div>
+  <div>拆硬件和起卦，其实是同一件事——<strong>都在找一个系统里看不见的规律</strong>。前者靠示波器，后者靠象数。</div>
 </div>
 
 <div class="z-note">
