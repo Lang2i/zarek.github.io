@@ -24,6 +24,8 @@ top_img: /img/banner.svg
 
 一个把「拆开看看里面是什么」当成日常的人。
 
+通信背景出身，所以看设备时习惯先问一句：它的信号往哪儿走？空口上飞的是什么？报文怎么组、怎么解。这个视角让我在无线那一层比大多数人走得更深——不只是抓到包，而是能从调制、帧结构一路读到应用层的明文。
+
 主攻物联网安全，具体来说是把那些看起来封闭的智能硬件打开——读它的 Flash、找它的调试口、抓它空中的无线包，看看厂商到底在里面放了什么，以及哪些地方本该加锁却没加。
 
 不写「十分钟入门」这类内容。这里发布的每一篇，都是我自己在真实设备上跑通过、踩过坑、能复现的流程。
@@ -47,9 +49,14 @@ top_img: /img/banner.svg
     <p>UART / JTAG 调试口定位、SPI Flash 直接读取，从物理层拿到最高权限。</p>
   </div>
   <div class="z-card">
+    <div class="z-card-icon"><i class="fas fa-tower-broadcast"></i></div>
+    <h4>通信与协议</h4>
+    <p>从空口信号到报文结构：抓包、解帧、还原应用层协议，理解它为什么这样设计、又在哪一步可以被打断。</p>
+  </div>
+  <div class="z-card">
     <div class="z-card-icon"><i class="fas fa-code"></i></div>
     <h4>造工具</h4>
-    <p>基于 LLVM 自研 <strong>Zarek</strong> 语言（类 C 语法，面向嵌入式与脚本场景），以及单文件纯前端的 HTML PPT 工具 <strong>HPT</strong>。</p>
+    <p>基于 LLVM 自研 <strong>Vane</strong> 语言（类 C 语法，面向嵌入式与脚本场景），以及单文件纯前端的 HTML PPT 工具 <strong>HPT</strong>。</p>
   </div>
 </div>
 
@@ -67,7 +74,9 @@ top_img: /img/banner.svg
   <span>逻辑分析仪</span>
   <span>UART / JTAG / SPI</span>
   <span>BLE / Zigbee / Sub-GHz</span>
+  <span>TCP/IP</span>
   <span>MQTT</span>
+  <span>信号分析</span>
 </div>
 
 ## 一路走过来
@@ -80,7 +89,7 @@ top_img: /img/banner.svg
   </div>
   <div class="z-timeline-item">
     <div class="z-tl-time">进行中</div>
-    <div class="z-tl-title">Zarek 语言</div>
+    <div class="z-tl-title">Vane 语言</div>
     <div class="z-tl-desc">用 C/C++ 基于 LLVM 实现的一门语言，类 C 语法、模块系统、<code>fn</code> 语法、<code>type:name</code> 参数、可与 C 链接，目标场景是嵌入式与脚本。</div>
   </div>
   <div class="z-timeline-item">
@@ -101,7 +110,6 @@ top_img: /img/banner.svg
   <a href="https://github.com/Lang2i" target="_blank"><i class="fab fa-github"></i> GitHub</a>
   <a class="z-ghost" href="https://github.com/Lang2i/zarek.github.io" target="_blank"><i class="fas fa-code-branch"></i> 本站源码</a>
   <a class="z-ghost" href="mailto:2071816969@qq.com"><i class="fas fa-envelope"></i> 邮箱</a>
-  <a class="z-ghost" href="/zarek.github.io/atom.xml"><i class="fas fa-rss"></i> 订阅</a>
 </div>
 
 <div class="z-note">
