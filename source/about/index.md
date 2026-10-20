@@ -5,32 +5,110 @@ type: about
 top_img: /img/banner.svg
 ---
 
-## 你好，我是 Zarek
+<div class="z-hero">
+  <img src="/zarek.github.io/img/avatar.jpg" alt="Zarek">
+  <div class="z-hero-text">
+    <h2>枫煜 Zarek</h2>
+    <p>物联网安全研究者 · 硬件渗透爱好者 · 工具造轮子的人<br>
+    拆固件、抓无线、找调试口，然后把过程写成能复现的文字。</p>
+    <div class="z-hero-tags">
+      <span>固件分析</span>
+      <span>无线协议</span>
+      <span>硬件渗透</span>
+      <span>编译器</span>
+    </div>
+  </div>
+</div>
 
-电子信息技术专业在读，方向是**物联网安全**——拆固件、抓无线、找硬件调试口。
+## 我是谁
 
-不写入门科普，只记录自己真正动手验证过的东西：怎么从一颗 SPI Flash 里把文件系统抠出来，怎么在板子上找到 UART 的 TX/RX，怎么把一个 BLE 锁重放开来。
+一个把「拆开看看里面是什么」当成日常的人。
 
-## 在做什么
+主攻物联网安全，具体来说是把那些看起来封闭的智能硬件打开——读它的 Flash、找它的调试口、抓它空中的无线包，看看厂商到底在里面放了什么，以及哪些地方本该加锁却没加。
 
-| 方向 | 内容 |
-|------|------|
-| **固件分析** | 拆包、文件系统还原、后门与硬编码凭据排查 |
-| **无线协议** | BLE / Zigbee / Sub-GHz 的嗅探、重放与伪造 |
-| **硬件渗透** | UART / JTAG 调试口定位、SPI Flash 读取 |
-| **工具开发** | 自写脚本与编译器（LLVM 上的 Zarek 语言） |
+不写「十分钟入门」这类内容。这里发布的每一篇，都是我自己在真实设备上跑通过、踩过坑、能复现的流程。
+
+## 在做的事
+
+<div class="z-grid">
+  <div class="z-card">
+    <div class="z-card-icon"><i class="fas fa-microchip"></i></div>
+    <h4>固件分析</h4>
+    <p>binwalk 拆包、文件系统还原、后门与硬编码凭据排查，从二进制里还原出厂商的疏忽。</p>
+  </div>
+  <div class="z-card">
+    <div class="z-card-icon"><i class="fas fa-wifi"></i></div>
+    <h4>无线协议</h4>
+    <p>BLE、Zigbee、Sub-GHz 的嗅探、重放与伪造。手里有 ChameleonUltra，MQTT 侧用 Mosquitto 搭靶场。</p>
+  </div>
+  <div class="z-card">
+    <div class="z-card-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+    <h4>硬件渗透</h4>
+    <p>UART / JTAG 调试口定位、SPI Flash 直接读取，从物理层拿到最高权限。</p>
+  </div>
+  <div class="z-card">
+    <div class="z-card-icon"><i class="fas fa-code"></i></div>
+    <h4>造工具</h4>
+    <p>基于 LLVM 自研 <strong>Zarek</strong> 语言（类 C 语法，面向嵌入式与脚本场景），以及单文件纯前端的 HTML PPT 工具 <strong>HPT</strong>。</p>
+  </div>
+</div>
+
+## 技术栈
+
+<div class="z-tags">
+  <span>C / C++</span>
+  <span>LLVM</span>
+  <span>Linux</span>
+  <span>Nim</span>
+  <span>Lua</span>
+  <span>Shell</span>
+  <span>binwalk</span>
+  <span>Ghidra</span>
+  <span>逻辑分析仪</span>
+  <span>UART / JTAG / SPI</span>
+  <span>BLE / Zigbee / Sub-GHz</span>
+  <span>MQTT</span>
+</div>
+
+## 一路走过来
+
+<div class="z-timeline">
+  <div class="z-timeline-item">
+    <div class="z-tl-time">现在</div>
+    <div class="z-tl-title">物联网安全 · 系统化攻坚</div>
+    <div class="z-tl-desc">从「能扫描」推进到「能利用」：不再满足于跑通现成脚本，而是理解每一个漏洞为什么成立、怎么稳定复现。</div>
+  </div>
+  <div class="z-timeline-item">
+    <div class="z-tl-time">进行中</div>
+    <div class="z-tl-title">Zarek 语言</div>
+    <div class="z-tl-desc">用 C/C++ 基于 LLVM 实现的一门语言，类 C 语法、模块系统、<code>fn</code> 语法、<code>type:name</code> 参数、可与 C 链接，目标场景是嵌入式与脚本。</div>
+  </div>
+  <div class="z-timeline-item">
+    <div class="z-tl-time">进行中</div>
+    <div class="z-tl-title">HPT · HTML PPT</div>
+    <div class="z-tl-desc">单文件纯前端的在线幻灯片编辑器：实时编辑、HTML 导出、演示模式，用浏览器替代传统 PPT。</div>
+  </div>
+  <div class="z-timeline-item">
+    <div class="z-tl-time">持续</div>
+    <div class="z-tl-title">B 站「枫煜Zarek」</div>
+    <div class="z-tl-desc">把 IoT 安全的学习过程做成视频：固件分析、无线协议、硬件渗透。不露脸，不放动画，只讲技术本身。</div>
+  </div>
+</div>
 
 ## 找到我
 
-- **GitHub**：[github.com/Lang2i](https://github.com/Lang2i)
-- **博客源码**：[Lang2i/zarek.github.io](https://github.com/Lang2i/zarek.github.io)
-- **邮箱**：[2071816969@qq.com](mailto:2071816969@qq.com)
-- **订阅**：[RSS / atom.xml](/atom.xml)
+<div class="z-links">
+  <a href="https://github.com/Lang2i" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+  <a class="z-ghost" href="https://github.com/Lang2i/zarek.github.io" target="_blank"><i class="fas fa-code-branch"></i> 本站源码</a>
+  <a class="z-ghost" href="mailto:2071816969@qq.com"><i class="fas fa-envelope"></i> 邮箱</a>
+  <a class="z-ghost" href="/zarek.github.io/atom.xml"><i class="fas fa-rss"></i> 订阅</a>
+</div>
 
-## 关于这个站
+<div class="z-note">
+  <div><i class="fas fa-shield-halved" style="color:#00b8d4;"></i></div>
+  <div>本站所有技术内容仅用于<strong>授权测试与学习研究</strong>。请勿将文中方法用于任何未授权的目标——这条线不该被跨过。</div>
+</div>
 
-用 [Hexo](https://hexo.io/) 生成，[Butterfly](https://github.com/jerryc127/hexo-theme-butterfly) 主题，托管在 GitHub Pages。
+## 关于本站
 
-源码在 `main` 分支，构建产物在 `gh-pages` 分支。
-
-> 所有技术内容仅用于授权测试与学习研究。请勿用于未授权的目标。
+用 [Hexo](https://hexo.io/) 生成，[Butterfly](https://github.com/jerryc127/hexo-theme-butterfly) 主题，托管在 GitHub Pages。源码在 `main` 分支，构建产物在 `gh-pages` 分支，每次 `hexo deploy` 自动发布。
