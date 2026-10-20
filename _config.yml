@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Zarek
+title: Zarek的小屋
 subtitle: 'IoT 安全 · 固件分析 · 无线协议'
-description: '枫煜Zarek 的技术笔记本'
+description: '枫煜Zarek 的技术小屋'
 keywords: IoT安全,固件分析,无线协议,硬件渗透
 author: Zarek
 language: zh-CN
@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fluid
+theme: butterfly
 
 # 鏈湴鎼滅储绱㈠紩锛堜緵 Fluid 涓婚鎼滅储妗嗕娇鐢級
 search:
