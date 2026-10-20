@@ -4,7 +4,8 @@ date: 2026-10-19 23:30:00
 tags:
   - 随笔
 categories:
-  - 日志
+  - 固件分析
+swiper_list: true
 ---
 
 博客搭好了。
