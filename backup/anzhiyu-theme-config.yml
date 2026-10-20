@@ -17,15 +17,15 @@ nav:
       item:
         - name: 博客
           link: https://hexo.anheyu.com/
-          icon: /img/favicon.ico
+          icon: /zarek.github.io/img/favicon.ico
     - title: 项目
       item:
         - name: GitHub
           link: https://github.com/Lang2i
-          icon: /img/favicon.ico
+          icon: /zarek.github.io/img/favicon.ico
         - name: 博客源码
           link: https://github.com/Lang2i/zarek.github.io
-          icon: /img/favicon.ico
+          icon: /zarek.github.io/img/favicon.ico
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
@@ -125,7 +125,7 @@ katex:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: /img/favicon.ico
+favicon: /zarek.github.io/img/favicon.ico
 
 # Avatar (头像)
 avatar:
