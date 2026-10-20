@@ -79,6 +79,33 @@ top_img: /img/banner.svg
   <span>信号分析</span>
 </div>
 
+## 技术之外
+
+技术不是我的全部。真正让我愿意花掉整个晚上的，往往是这几件事：
+
+<div class="z-grid">
+  <div class="z-card">
+    <div class="z-card-icon"><i class="fas fa-camera-retro"></i></div>
+    <h4>摄影</h4>
+    <p>镜头是我另一双眼睛。拍得最多的是电路板的纹路、天线的弧度、深夜实验室的灯——那些在被我拆开之前的样子。</p>
+  </div>
+  <div class="z-card">
+    <div class="z-card-icon"><i class="fas fa-terminal"></i></div>
+    <h4>编程</h4>
+    <p>写代码是我理解世界的方式。从脚本到编译器，把想法变成一个能跑起来的东西，这个过程本身就足够上瘾。</p>
+  </div>
+  <div class="z-card">
+    <div class="z-card-icon"><i class="fas fa-tools"></i></div>
+    <h4>动手</h4>
+    <p>焊台、示波器、一堆飞线。喜欢能摸到的东西，也相信只有亲手拆过，才算真的懂。</p>
+  </div>
+</div>
+
+<div class="z-note">
+  <div><i class="fas fa-camera" style="color:#00b8d4;"></i></div>
+  <div>照片都放在 <a href="/zarek.github.io/photography/">摄影</a> 这个页面，点开可以看大图。</div>
+</div>
+
 ## 一路走过来
 
 <div class="z-timeline">
