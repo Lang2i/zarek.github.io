@@ -42,7 +42,6 @@
     s.setAttribute('repo', REPO);
     s.setAttribute('issue-term', 'pathname');
     s.setAttribute('theme', 'preferred-color-scheme');
-    s.setAttribute('label', '评论');
     box.appendChild(s);
   }
 
