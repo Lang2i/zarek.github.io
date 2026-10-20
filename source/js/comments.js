@@ -1,10 +1,14 @@
 /**
- * utterances 评论（GitHub Issues 驱动，免服务器）
+ * giscus 评论（基于 GitHub Discussions，数据经 giscus.app 中转，国内可访问）
  * 在文章页与关于页末尾插入评论区
  */
 (function () {
-  var REPO = 'Lang2i/zarek.github.io';
-  var SCRIPT_SRC = 'https://utteranc.es/client.js';
+  var CONFIG = {
+    repo: 'Lang2i/zarek.github.io',
+    repoId: 'R_kgDOVPxS9A',
+    category: 'General',
+    categoryId: 'DIC_kwDOVPxS9M4DJLqi'
+  };
 
   function shouldShow() {
     // 文章页：/2026/10/19/xxx/ 形式
@@ -32,16 +36,25 @@
     holder.dataset.loaded = '1';
 
     var box = document.createElement('div');
-    box.className = 'utterances-box';
+    box.className = 'giscus-box';
     holder.appendChild(box);
 
     var s = document.createElement('script');
-    s.src = SCRIPT_SRC;
+    s.src = 'https://giscus.app/client.js';
     s.async = true;
     s.crossOrigin = 'anonymous';
-    s.setAttribute('repo', REPO);
-    s.setAttribute('issue-term', 'pathname');
-    s.setAttribute('theme', 'preferred-color-scheme');
+    s.setAttribute('data-repo', CONFIG.repo);
+    s.setAttribute('data-repo-id', CONFIG.repoId);
+    s.setAttribute('data-category', CONFIG.category);
+    s.setAttribute('data-category-id', CONFIG.categoryId);
+    s.setAttribute('data-mapping', 'pathname');
+    s.setAttribute('data-strict', '0');
+    s.setAttribute('data-reactions-enabled', '1');
+    s.setAttribute('data-emit-metadata', '0');
+    s.setAttribute('data-input-position', 'top');
+    s.setAttribute('data-theme', 'preferred_color_scheme');
+    s.setAttribute('data-lang', 'zh-CN');
+    s.setAttribute('data-loading', 'lazy');
     box.appendChild(s);
   }
 
