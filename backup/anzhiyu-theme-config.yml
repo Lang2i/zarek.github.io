@@ -125,7 +125,7 @@ katex:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: /zarek.github.io/img/favicon.ico
+favicon: /img/favicon.ico?v=2
 
 # Avatar (头像)
 avatar:
@@ -1241,6 +1241,8 @@ inject:
 
   bottom:
     # 自定义js
+    - <script src="/zarek.github.io/js/comments.js"></script>
+    - <script src="/zarek.github.io/js/comments.js"></script>
     # - <script src="/js/xxx"></script>
 
 # CDN

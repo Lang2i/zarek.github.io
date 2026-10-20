@@ -1,7 +1,6 @@
 ---
 title: 关于
 date: 2026-10-20 12:58:18
-type: about
 top_img: /img/banner.svg
 ---
 
