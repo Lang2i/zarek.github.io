@@ -1,0 +1,80 @@
+/* ===== Zarek 小屋 自定义样式 ===== */
+
+/* 卡片圆角与阴影，整体更柔和 */
+#recent-posts > .recent-post-item,
+.card-widget,
+#page,
+.post,
+.layout > div:first-child:not(.recent-posts) {
+  border-radius: 12px;
+}
+
+#recent-posts > .recent-post-item {
+  box-shadow: 0 4px 18px rgba(15, 76, 92, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#recent-posts > .recent-post-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(15, 76, 92, 0.16);
+}
+
+/* 首页大标题：青色渐变 */
+#site-title {
+  background: linear-gradient(120deg, #00e5ff 0%, #7fd7e8 45%, #b8f0ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
+/* 副标题打字机 */
+#subtitle {
+  letter-spacing: 0.12em;
+  font-weight: 400;
+}
+
+/* 头像：青蓝描边 + 柔光 */
+#card-info-btn,
+.card-info-avatar .avatar-img {
+  border-radius: 50%;
+}
+
+.avatar-img {
+  border: 2px solid rgba(0, 229, 255, 0.6);
+  box-shadow: 0 0 18px rgba(0, 229, 255, 0.35);
+}
+
+/* 侧栏作者卡片背景微调 */
+.card-widget.card-info {
+  background: linear-gradient(160deg, #ffffff 0%, #f2fbfd 100%);
+}
+
+/* 导航栏当前项高亮 */
+#nav .site-page:hover,
+#nav .site-page.active {
+  color: #00b8d4;
+}
+
+/* 文章内 h2 加左侧色条 */
+.post-content h2 {
+  padding-left: 12px;
+  border-left: 4px solid #00b8d4;
+}
+
+/* 表格更清爽 */
+.post-content table th {
+  background: rgba(15, 76, 92, 0.06);
+}
+
+/* 代码块圆角 */
+.post-content figure.highlight,
+.post-content pre {
+  border-radius: 8px;
+}
+
+/* 页脚链接颜色 */
+#footer-wrap a {
+  color: #00b8d4;
+}

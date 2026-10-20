@@ -98,17 +98,27 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 
-# 鏈湴鎼滅储绱㈠紩锛堜緵 Fluid 涓婚鎼滅储妗嗕娇鐢級
+# 本地搜索索引（供测试用）
 search:
   path: local-search.xml
   field: post
   content: true
   format: html
 
+# RSS 订阅
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content: true
+  content_limit: 140
+  content_limit_delim: ' '
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:Lang2i/zarek.github.io.git
+  repo: https://github.com/Lang2i/zarek.github.io.git
   branch: gh-pages
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
