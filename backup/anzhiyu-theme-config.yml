@@ -7,6 +7,22 @@ menu:
   关于本人: /about/ || anzhiyu-icon-paper-plane
   GitHub: https://github.com/Lang2i || anzhiyu-icon-github
 
+  # 友链:
+  #   友人帐: /link/ || anzhiyu-icon-link
+  #   朋友圈: /fcircle/ || anzhiyu-icon-artstation
+  #   留言板: /comments/ || anzhiyu-icon-envelope
+
+  # 我的:
+  #   音乐馆: /music/ || anzhiyu-icon-music
+  #   追番页: /bangumis/ || anzhiyu-icon-bilibili
+  #   相册集: /album/ || anzhiyu-icon-images
+  #   小空调: /air-conditioner/ || anzhiyu-icon-fan
+
+  # 关于:
+  #   关于本人: /about/ || anzhiyu-icon-paper-plane
+  #   闲言碎语: /essay/ || anzhiyu-icon-lightbulb
+  #   随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+
 # nav相关配置
 nav:
   enable: false
@@ -16,16 +32,13 @@ nav:
     - title: 网页
       item:
         - name: 博客
-          link: https://hexo.anheyu.com/
-          icon: /zarek.github.io/img/favicon.ico
+          link: https://lang2i.github.io/zarek.github.io/
+          icon: /img/favicon.ico
     - title: 项目
       item:
-        - name: GitHub
+        - name: 安知鱼图床
           link: https://github.com/Lang2i
-          icon: /zarek.github.io/img/favicon.ico
-        - name: 博客源码
-          link: https://github.com/Lang2i/zarek.github.io
-          icon: /zarek.github.io/img/favicon.ico
+          icon: /img/favicon.ico
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
@@ -233,7 +246,8 @@ post_copyright:
 # Sponsor/reward
 reward:
   enable: false
-  QR_code: []
+  QR_code:
+    QR_code: []
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -532,7 +546,7 @@ footer:
       # source: 2  调用一句网（简体） http://yijuzhan.com/
       # source: 3  调用今日诗词（简体） https://www.jinrishici.com/
       # subtitle 会先显示 source , 再显示 sub 的内容
-      source: 1
+      source: false
       # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
       sub:
         # - 生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期.
@@ -758,7 +772,7 @@ subtitle:
   # source: 2  调用一句网（简体） http://yijuzhan.com/
   # source: 3  调用今日诗词（简体） https://www.jinrishici.com/
   # subtitle 会先显示 source , 再显示 sub 的内容
-  source: false
+  source: 1
   # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
   sub:
     - 拆固件&#44;也拆协议
@@ -794,7 +808,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description: <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">通信背景出身&#44;主攻<b style="color:#fff">物联网安全</b>：固件分析、无线协议、硬件渗透。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">只写<b style="color:#fff">动手验证过</b>的东西&#44;偶尔摄影&#44;翻两页术数。</div> # 默认为站点描述
+    description: <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">通信背景出身&#44;主攻<b style="color:#fff">物联网安全</b>：固件分析、无线协议、硬件渗透。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">只写<b style="color:#fff">动手验证过</b>的东西&#44;偶尔摄影&#44;翻两页术数。</div>
     name_link: /
 
   card_announcement:
@@ -933,7 +947,6 @@ medium_zoom: false
 # fancybox
 # http://fancyapps.com/fancybox/3/
 fancybox: false
-medium_zoom_alt: true
 
 # Tag Plugins settings (标籤外挂)
 # --------------------------------------
@@ -1066,7 +1079,6 @@ home_top:
     title: Zarek 的小屋
     image: /img/banner.svg
     link: /about/
-
 # 朋友圈配置
 friends_vue:
   enable: false
@@ -1087,7 +1099,7 @@ bubble:
 console:
   enable: true
 
-# 51la统计配置
+# 51a统计配置
 LA:
   enable: false
   ck:
@@ -1241,7 +1253,6 @@ inject:
 
   bottom:
     # 自定义js
-    - <script src="/zarek.github.io/js/comments.js"></script>
     - <script src="/zarek.github.io/js/comments.js"></script>
     # - <script src="/js/xxx"></script>
 
