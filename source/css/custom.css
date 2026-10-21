@@ -623,69 +623,40 @@ body {
 
 /* ===== 首页横幅：背景图 + 白字 + 入场动画 ===== */
 #random-banner {
-  background: url("/zarek.github.io/img/home-banner.webp") center / cover no-repeat;
+  background: url("/zarek.github.io/img/home-banner.webp") center 40% / cover no-repeat;
   border: none;
+  min-height: 320px;
+  align-items: center;
   animation: heroFadeUp 0.8s ease both;
 }
 #random-banner .banners-title {
-  padding: 2.5rem 3rem;
+  padding: 2rem 3.5rem;
   width: 100%;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.28) 45%, rgba(0, 0, 0, 0) 75%);
 }
 #random-banner .banners-title-big {
   color: #fff;
-  font-size: 2.2rem;
-  line-height: 1.4;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
   animation: heroFadeUp 0.8s 0.15s ease both;
 }
 #random-banner .banners-title-big + .banners-title-big {
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 0.95;
   animation-delay: 0.3s;
 }
 #random-banner .banners-title-small {
-  color: rgba(255, 255, 255, 0.75);
-  animation: heroFadeUp 0.8s 0.45s ease both;
-}
-#random-banner .tags-group-icon-pair .tags-group-icon {
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
-}
-#random-banner #random-hover .bannerText {
-  color: #fff;
-}
-.categoryGroup .categoryItem {
-  animation: heroFadeUp 0.8s ease both;
-}
-.categoryGroup .categoryItem:nth-child(1) { animation-delay: 0.2s; }
-.categoryGroup .categoryItem:nth-child(2) { animation-delay: 0.35s; }
-.categoryGroup .categoryItem:nth-child(3) { animation-delay: 0.5s; }
-@keyframes heroFadeUp {
-  from { opacity: 0; transform: translateY(18px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* ===== 首页横幅：背景图 + 白字 + 入场动画 ===== */
-#random-banner {
-  background: url("/zarek.github.io/img/home-banner.webp") center / cover no-repeat;
-  border: none;
-  animation: heroFadeUp 0.8s ease both;
-}
-#random-banner .banners-title {
-  padding: 2.5rem 3rem;
-  width: 100%;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
-}
-#random-banner .banners-title-big {
-  color: #fff;
-  font-size: 2.2rem;
-  line-height: 1.4;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
-  animation: heroFadeUp 0.8s 0.15s ease both;
-}
-#random-banner .banners-title-big + .banners-title-big {
-  animation-delay: 0.3s;
-}
-#random-banner .banners-title-small {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  margin-top: 0.6rem;
   animation: heroFadeUp 0.8s 0.45s ease both;
 }
 #random-banner .tags-group-icon-pair .tags-group-icon {
