@@ -621,42 +621,41 @@ body {
   }
 }
 
-/* ===== 首页横幅：背景图 + 白字 + 入场动画 ===== */
+/* ===== 首页横幅：完整显示背景图 + 克制的文字 ===== */
 #random-banner {
-  background: url("/zarek.github.io/img/home-banner.webp") center 40% / cover no-repeat;
+  background: url("/zarek.github.io/img/home-banner.webp") center / 100% 100% no-repeat;
   border: none;
-  min-height: 320px;
-  align-items: center;
+  min-height: 280px;
+  max-height: 400px;
   animation: heroFadeUp 0.8s ease both;
 }
 #random-banner .banners-title {
-  padding: 2rem 3.5rem;
+  padding: 1.5rem 3rem;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.28) 45%, rgba(0, 0, 0, 0) 75%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 80%);
 }
 #random-banner .banners-title-big {
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 1.9rem;
   font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
   animation: heroFadeUp 0.8s 0.15s ease both;
 }
 #random-banner .banners-title-big + .banners-title-big {
-  font-size: 1.5rem;
-  font-weight: 600;
-  opacity: 0.95;
+  font-size: 1.15rem;
+  font-weight: 500;
+  opacity: 0.92;
   animation-delay: 0.3s;
 }
 #random-banner .banners-title-small {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 1rem;
-  margin-top: 0.6rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
   animation: heroFadeUp 0.8s 0.45s ease both;
 }
 #random-banner .tags-group-icon-pair .tags-group-icon {
